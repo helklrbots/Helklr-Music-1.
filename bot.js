@@ -316,7 +316,7 @@ function play(guild, song) {
 client.on('message', message => {
     if (message.content === 'Rhelp') {
         let helpEmbed = new Discord.RichEmbed()
-        .setTitle('**أوامر الميوزك...**')
+        .setTitle('**أوامر الميوزك....**')
         .setDescription('**برفكس البوت (R)**')
         .addField('Rplay', 'لتشغيل اغنية')
         .addField('Rvol', ' لرفع الصوت')
