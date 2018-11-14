@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "R";
+const prefix = "1";
 
 /////////////////////////
 ////////////////////////
@@ -314,18 +314,18 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'Rhelp') {
+    if (message.content === '1help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (R)**')
-        .addField('Rplay', 'لتشغيل اغنية')
-        .addField('Rvol', ' لرفع الصوت')
-        .addField('Rping', 'لرؤية بنق البوت')
-        .addField('Rskip', 'تخطي الأغنية')
-        .addField('Rpause', 'ايقاف الاغنية مؤقتا')
-        .addField('Rresume', 'تكملة الاغنية')
-        .addField('Rqueue', 'اظهار قائمة التشغيل')
-        .addField('Rnp', 'اظهار الاغنية اللي انت مشغلها حاليا')
+        .addField('1play', 'لتشغيل اغنية')
+        .addField('1vol', ' لرفع الصوت')
+        .addField('1ping', 'لرؤية بنق البوت')
+        .addField('1skip', 'تخطي الأغنية')
+        .addField('1pause', 'ايقاف الاغنية مؤقتا')
+        .addField('1resume', 'تكملة الاغنية')
+        .addField('1queue', 'اظهار قائمة التشغيل')
+        .addField('1np', 'اظهار الاغنية اللي انت مشغلها حاليا')
         .setFooter('Edited by :! - Mdax . ')
       message.channel.send(helpEmbed);
     }
@@ -339,7 +339,7 @@ client.on('message', message => {
 
 client.on('ready', function(){    
     var ms = 40000 ;    
-    var setGame = [`Made By : Mdax`,"Rplay"];    
+    var setGame = [`HelklR| 1play`,"1play"];    
     var i = -1;    
     var j = 0;    
     setInterval(function (){    
