@@ -383,5 +383,4 @@ if (message.content.startsWith(adminprefix + 'Stream')) {
 
 
 
-
 client.login(process.env.BOT_TOKEN);
