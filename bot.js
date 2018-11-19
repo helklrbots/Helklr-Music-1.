@@ -383,4 +383,27 @@ if (message.content.startsWith(adminprefix + 'Stream')) {
 
 
 
+
+
+client.on('message', message => {
+     if (message.content === "1bot") {////////////////By:Mal,Team
+     let embed = new Discord.RichEmbed()
+  .setColor("RANDOM")////////////////By:Mal,,Team
+  .addField("**Servers:**" , client.guilds.size)
+  .addField("**Users:**", client.users.size)////////////////By:Mal,Team
+  .addField("**channels:**", client.channels.size)
+  .setTimestamp()
+message.channel.sendEmbed(embed);
+    }
+});///////Mal,Team
+
+
+
+
+
+
+
+
+
+
 client.login(process.env.BOT_TOKEN);
